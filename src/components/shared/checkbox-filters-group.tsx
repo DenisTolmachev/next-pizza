@@ -79,7 +79,7 @@ export const CheckboxFiltersGroup: React.FC<Props> = ({
                         onClick={() => setShowAll(!showAll)}
                         className="text-primary mt-3"
                     >
-                        {showAll ? 'Показати менше' : 'Показати більше'}
+                        {showAll ? '- Показати менше' : '+ Показати більше'}
                     </button>
                 </div>
             )}

@@ -1,4 +1,5 @@
 import { Container, Filters, TopBar } from '@/components/shared';
+import { ProductsGroupList } from '@/components/shared/products-group-list';
 import { Title } from '@/components/shared/title';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       <TopBar />
 
       <Container className="pb-14 mt-10">
-        <div className="flex gap-[60px]">
+        <div className="flex gap-[80px]">
           {/* Filtering */}
           <div className="w-[250px]">
             <Filters />
@@ -19,7 +20,67 @@ export default function Home() {
 
           {/* List of products */}
           <div className="flex-1">
-            <div className="flex flex-col gap-16">Список продуктів</div>
+            <div className="flex flex-col gap-16">
+              <ProductsGroupList
+                title='Піци'
+                items={[
+                  { id: 1,
+                    name: 'Піца "Чізбургер"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/chyzburger-265x265.png',
+                    price: 230,
+                    items: [{price: 230}]
+                  },
+                  { id: 2,
+                    name: 'Піца "Гетьманська"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/getmanska-1-e1605024813823-265x265.png',
+                    price: 185,
+                    items: [{price: 185}]
+                  },
+                  { id: 3,
+                    name: 'Піца "Карбонара"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/karbonara--e1605026649950-265x265.png',
+                    price: 145,
+                    items: [{price: 145}]
+                  },
+                  { id: 4,
+                    name: 'Піца "Пікнік"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/karbonara--e1605026649950-265x265.png',
+                    price: 140,
+                    items: [{price: 140}]
+                  },
+                ]}
+              />
+
+              <ProductsGroupList
+                title='Тортільї'
+                items={[
+                  { id: 1,
+                    name: 'Тортілья з сьомгою',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/tortilla-semga-1-265x265.jpg',
+                    price: 150,
+                    items: [{price: 150}]
+                  },
+                  { id: 2,
+                    name: 'Тортілья "Буфало"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/tortilla-goviadina-1-265x265.jpg',
+                    price: 130,
+                    items: [{price: 130}]
+                  },
+                  { id: 3,
+                    name: 'Тортілья "Середземна"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/tortilla-sredizem-1-265x265.jpg',
+                    price: 150,
+                    items: [{price: 150}]
+                  },
+                  { id: 4,
+                    name: 'Тортілья "Жульєн"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/tortilla-zhulien-1-265x265.jpg',
+                    price: 130,
+                    items: [{price: 130}]
+                  },
+                ]}
+              />
+            </div>
           </div>
         </div>
       </Container>
