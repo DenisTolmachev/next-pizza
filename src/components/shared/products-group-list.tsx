@@ -8,7 +8,7 @@ interface Props {
     items: any[];
     className?: string;
     listClassNasme?: string;
-    categoryId: number;
+    // categoryId: number;
 }
 
 export const ProductsGroupList: React.FC<Props> = ({
@@ -16,7 +16,7 @@ export const ProductsGroupList: React.FC<Props> = ({
     items,
     className,
     listClassNasme,
-    categoryId,
+    // categoryId,
 }) => {
     return (
         <div className={className}>
