@@ -70,28 +70,20 @@ export const Filters: React.FC<Props> = ({ className }) => {
                         value: '6',
                     },
                     {
-                        text: 'Сирний соус',
-                        value: '1',
+                        text: 'Курча',
+                        value: '7',
                     },
                     {
-                        text: 'Моцарела',
-                        value: '2',
+                        text: 'Чедер',
+                        value: '8',
                     },
                     {
-                        text: 'Часник',
-                        value: '3',
+                        text: 'Пармезан',
+                        value: '9',
                     },
                     {
-                        text: 'Солоний огірок',
-                        value: '4',
-                    },
-                    {
-                        text: 'Червона цибуля',
-                        value: '5',
-                    },
-                    {
-                        text: 'Томат',
-                        value: '6',
+                        text: 'Анчоус',
+                        value: '10',
                     },
                 ]}
                 items={[
@@ -120,28 +112,20 @@ export const Filters: React.FC<Props> = ({ className }) => {
                         value: '6',
                     },
                     {
-                        text: 'Сирний соус',
-                        value: '1',
+                        text: 'Курча',
+                        value: '7',
                     },
                     {
-                        text: 'Моцарела',
-                        value: '2',
+                        text: 'Чедер',
+                        value: '8',
                     },
                     {
-                        text: 'Часник',
-                        value: '3',
+                        text: 'Пармезан',
+                        value: '9',
                     },
                     {
-                        text: 'Солоний огірок',
-                        value: '4',
-                    },
-                    {
-                        text: 'Червона цибуля',
-                        value: '5',
-                    },
-                    {
-                        text: 'Томат',
-                        value: '6',
+                        text: 'Анчоус',
+                        value: '10',
                     },
                 ]}
             />
