@@ -23,6 +23,7 @@ export default function Home() {
             <div className="flex flex-col gap-16">
               <ProductsGroupList
                 title='Піци'
+                categoryId={1}
                 items={[
                   { id: 1,
                     name: 'Піца "Чізбургер"',
@@ -53,6 +54,7 @@ export default function Home() {
 
               <ProductsGroupList
                 title='Тортільї'
+                categoryId={2}
                 items={[
                   { id: 1,
                     name: 'Тортілья з сьомгою',
@@ -77,6 +79,31 @@ export default function Home() {
                     imageUrl: 'https://mavrapizza.com/wp-content/uploads/tortilla-zhulien-1-265x265.jpg',
                     price: 130,
                     items: [{price: 130}]
+                  },
+                ]}
+              />
+
+              <ProductsGroupList
+                title='Піти'
+                categoryId={3}
+                items={[
+                  { id: 1,
+                    name: 'Піта "Овочева"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/PYTA-3-e1608028640939-265x265.jpg',
+                    price: 105,
+                    items: [{price: 105}]
+                  },
+                  { id: 2,
+                    name: 'Піта "Кукряча"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/PYTA-2-265x265.jpg',
+                    price: 125,
+                    items: [{price: 125}]
+                  },
+                  { id: 3,
+                    name: 'Піта "Баварська"',
+                    imageUrl: 'https://mavrapizza.com/wp-content/uploads/PYTA-3-e1608028640939-265x265.jpg',
+                    price: 115,
+                    items: [{price: 115}]
                   },
                 ]}
               />
